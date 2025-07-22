@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li
+                class="header__navbar-item header__navbar--has-qr header__navbar-item--separate"
+              >
+                Vào cửa hàng trên ứng dụng ShopE
+
+                <!-- header qr code -->
+                <div class="header__qr">
+                  <img
+                    src="./assets/img/cre_qrcode.png"
+                    alt="QR code"
+                    class="header__qr-img"
+                  />
+                  <div class="header__qr-apps">
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="./assets/img/Google_Play_logo.png"
+                        alt="Google Play"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="./assets/img/App_Store_logo.png"
+                        alt="App Store"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer">Kết nối</span>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fab fa-facebook"></i>
+                </a>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fas fa-bell"></i>
+                  Thông báo
+                </a>
+
+                <!-- header notification -->
+                <!-- header notification -->
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3>Thông báo mới nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <!-- Thông báo đã xem -->
+                    <li class="header__notify-item header__notify-item--viewed">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src=""
+                          alt="product image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Xác nhận đơn hàng #2024-A5B4 đã được giao</span
+                          >
+                          <span class="header__notify-descriotion"
+                            >Xem chi tiết đơn hàng của bạn tại đây</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Thông báo chưa xem -->
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="./assets/img/face_washing.png"
+                          alt="product image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Mỹ phẩm Ohui chính hãng giảm giá 50%</span
+                          >
+                          <span class="header__notify-descriotion"
+                            >Mừng sinh nhật, săn sale ngay!</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="./assets/img/serum.png"
+                          alt="product image"
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Bạn có 3 mã Freeship mới</span
+                          >
+                          <span class="header__notify-descriotion"
+                            >Sử dụng ngay trước khi hết hạn</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-btn">
+                      Xem tất cả
+                    </a>
+                  </footer>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon far fa-question-circle"></i>
+                  Trợ giúp
+                </a>
+              </li>
+              <li
+                id="register-btn"
+                class="header__navbar-item header__navbar-item--strong"
+              >
+                Đăng ký
+              </li>
+              <li
+                id="login-btn"
+                class="header__navbar-item header__navbar-item--strong"
+              >
+                Đăng nhập
+              </li>
+            </ul>
+          </nav>
+
+          <!-- search section -->
+          <div class="header-with-search">
+            <!-- Logo -->
+            <div class="header__logo">
+              <img
+                src="./assets/img/ShopE_logo_1.png"
+                alt="ShopE Logo"
+                class="header__logo-img"
+              />
+              <span class="header__logo-text">ShopE</span>
+            </div>
+
+            <!-- Search -->
+            <div class="header__search">
+              <div class="header__search-input-wrap">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Tìm sản phẩm, thương hiệu và shop"
+                />
+                <!-- Search history -->
+                <div class="header__search-history">
+                  <h3 class="header__search-history-heading">
+                    Lịch sử tìm kiếm
+                  </h3>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">Kem dưỡng da</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Serum trị mụn</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Áo thun nam</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+
+            <!-- Cart -->
+            <div class="header__cart">
+              <div class="header__cart-wrap">
+                <i class="header__cart-icon fas fa-shopping-cart"></i>
+                <span class="header__cart-notice">3</span>
+
+                <!-- Cart List (Dropdown) -->
+                <div class="header__cart-list">
+                  <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                  <ul class="header__cart-list-items">
+                    <!-- Cart item 1 -->
+                    <li class="header__cart-item">
+                      <img
+                        src="./assets/img/face_washing.png"
+                        alt=""
+                        class="header__cart-img"
+                      />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">
+                            Sữa rửa mặt cho da dầu mụn siêu cấp vip pro
+                          </h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price"
+                              >2.000.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">
+                            Phân loại: Mỹ phẩm
+                          </span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Cart item 2 -->
+                    <li class="header__cart-item">
+                      <img
+                        src="./assets/img/serum.png"
+                        alt=""
+                        class="header__cart-img"
+                      />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Serum dưỡng da</h5>
+                          <div class="header__cart-item-price-wrap">
+                            <span class="header__cart-item-price"
+                              >1.500.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-qnt">1</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">
+                            Phân loại: Mỹ phẩm
+                          </span>
+                          <span class="header__cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="#" class="header__cart-view-cart btn btn--primary"
+                    >Xem Giỏ Hàng</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container"></div>
+      <footer></footer>
+    </div>
+    <!-- Modal Layout -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <!-- Register Form -->
+        <div id="register-form" class="auth-form">
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h3 class="auth-form__heading">Đăng ký</h3>
+              <span class="auth-form__switch-btn js-switch-to-login"
+                >Đăng nhập</span
+              >
+            </div>
+
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Email của bạn"
+                />
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Mật khẩu của bạn"
+                />
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập lại mật khẩu"
+                />
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <p class="auth-form__policy-text">
+                Bằng việc đăng kí, bạn đã đồng ý với ShopE về
+                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+              </p>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back js-modal-close">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary">ĐĂNG KÝ</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="btn btn--size-s btn--with-icon">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với Facebook</span>
+            </a>
+            <a href="" class="btn btn--size-s btn--with-icon">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với Google</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="auth-form">
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h3 class="auth-form__heading">Đăng nhập</h3>
+              <span class="auth-form__switch-btn js-switch-to-register"
+                >Đăng ký</span
+              >
+            </div>
+
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Email của bạn"
+                />
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Mật khẩu của bạn"
+                />
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-separate"></span>
+                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back js-modal-close">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="btn btn--size-s btn--with-icon">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title"
+                >Đăng nhập với Facebook</span
+              >
+            </a>
+            <a href="" class="btn btn--size-s btn--with-icon">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Đăng nhập với Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
